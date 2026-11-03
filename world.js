@@ -135,13 +135,13 @@ const SLIDES = {
   "concl-no": { world: "street", c: ST, a: 0.35, d: [7.5, 6], h: [2, 1.8], ly: [1.3, 1.4], layout: "text",
     cast: [{ k: "scuzzy", u: 0.4, v: 0.3, anim: ["think", "talk_a"], ry: -0.2 }, { k: "evil", u: -1.2, v: 0.4, anim: ["point", "idle"], ry: 0.4 },
            { k: "police", u: 4.2, v: -3.2, ry: -0.8, lights: [0, 1], sc: 1.3 }, { k: "cooler", u: 1.8, v: -5.2, spin: 0.3, sc: 9.0 }] },
-  "bye": { world: "street", c: ST, a: 0.15, d: [8.5, 7], h: [2.4, 2], ly: [1.3, 1.4], layout: "text",
+  "bye": { world: "street", c: ST, a: 0.15, d: [10.5, 9], h: [2.6, 2.2], ly: [1.3, 1.4], layout: "text",
     cast: [
-      { k: "car", drive: { from: [-8, -7], to: [0.8, -0.6], t: [0.05, 0.55] }, sc: 1.15 },
+      { k: "car", drive: { from: [-9, -7], to: [-0.2, -0.8], t: [0.05, 0.55] }, sc: 1.1 },
       { k: "scuzzy", ride: { car: "car", off: SEAT }, anim: "drive" },
-      { k: "six", u: -0.3, v: 1.6, spin: 0.5, sc: 2.6 },
-      { k: "cooler2", u: 2.4, v: -4.5, spin: 0.25, sc: 9 },
-      { k: "marge", u: 2.7, v: 1.0, anim: ["wave", "talk_a"], ry: -0.5 }] },
+      { k: "six", u: -2.0, v: 1.4, spin: 0.5, sc: 3.2 },
+      { k: "cooler2", u: 3.6, v: -6.5, ry: -0.4, sc: 6.5 },
+      { k: "marge", u: 2.0, v: 1.2, anim: ["wave", "talk_a"], ry: -0.4 }] },
   "concl-next": { world: "street", c: ST, a: 0.1, d: [8, 9], h: [2.2, 3.6], ly: [1.3, 2.2], layout: "text",
     cast: [
       { k: "maggie", walk: { from: [3, -3], to: [0.4, 0.8], t: [0.05, 0.5] }, anim: "idle" },
