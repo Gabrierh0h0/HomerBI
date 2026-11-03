@@ -129,3 +129,31 @@ main { position: relative; z-index: 1; }
 .scene--chart .bi figcaption { align-self: stretch; }
 .gallery .bi img { max-height: 38svh; width: 100%; object-fit: contain; }
 @media (max-width: 900px) { .scene--chart .bi img { max-height: none; width: 100%; } }
+
+/* ---------- Intro: cielo y nubes ---------- */
+#intro { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; overflow: hidden; background: linear-gradient(180deg, #2f8fe6 0%, #6cc0f7 55%, #bfe6ff 100%); transition: opacity 0.9s var(--ease); }
+#intro.out { opacity: 0; pointer-events: none; }
+.intro__sky { position: absolute; inset: 0; }
+.cloud { position: absolute; left: -30vw; width: 26vw; height: 8vw; border-radius: 999px; background: #fff; box-shadow: 0 1.2vw 0 rgba(150, 200, 240, 0.55); animation: drift linear infinite; }
+.cloud::before, .cloud::after { content: ""; position: absolute; background: #fff; border-radius: 50%; }
+.cloud::before { width: 42%; height: 150%; left: 14%; bottom: 25%; }
+.cloud::after { width: 34%; height: 120%; right: 14%; bottom: 20%; }
+.c1 { top: 8%; transform: scale(1.1); animation-duration: 34s; animation-delay: -20s; }
+.c2 { top: 22%; transform: scale(0.7); animation-duration: 26s; animation-delay: -6s; }
+.c3 { top: 38%; transform: scale(1.4); animation-duration: 42s; animation-delay: -30s; }
+.c4 { top: 56%; transform: scale(0.9); animation-duration: 30s; animation-delay: -12s; }
+.c5 { top: 70%; transform: scale(1.2); animation-duration: 38s; animation-delay: -2s; }
+.c6 { top: 14%; transform: scale(0.55); animation-duration: 22s; animation-delay: -16s; }
+.c7 { top: 48%; transform: scale(0.6); animation-duration: 24s; animation-delay: -9s; }
+.c8 { top: 82%; transform: scale(1.0); animation-duration: 32s; animation-delay: -24s; }
+@keyframes drift { to { left: 110vw; } }
+.intro__title { position: relative; margin: 0; font-family: var(--font-logo); font-weight: 400; font-size: clamp(3.4rem, 13vw, 14rem); line-height: 1; color: var(--yellow); letter-spacing: 0.01em; text-align: center;
+  text-shadow: -4px -4px 0 var(--outline), 4px -4px 0 var(--outline), -4px 4px 0 var(--outline), 4px 4px 0 var(--outline), 0 8px 0 var(--outline), 0 14px 24px rgba(0, 40, 90, 0.45);
+  animation: zoomIn 3.4s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+@keyframes zoomIn { from { transform: scale(0.05) rotate(-6deg); opacity: 0; } 18% { opacity: 1; } to { transform: scale(1) rotate(0); opacity: 1; } }
+.intro__skip { position: absolute; right: 1.2rem; bottom: 1.2rem; font: 400 0.85rem/1 var(--font-mono); color: #0b2a4a; background: rgba(255, 255, 255, 0.7); border: 0; border-radius: 999px; padding: 0.6rem 1rem; cursor: pointer; }
+body.intro-on { overflow: hidden; }
+@media (prefers-reduced-motion: reduce) { .cloud { animation: none; left: 20vw; } .intro__title { animation: none; } }
+
+/* ---------- Despedida ---------- */
+.scene--bye .display { max-width: 60%; }
