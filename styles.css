@@ -121,3 +121,11 @@ main { position: relative; z-index: 1; }
 .scene--text > .points { max-width: min(54ch, 52%); }
 .scene--chart .headline { font-size: clamp(1.6rem, 3vw, 3.2rem); }
 .scene--chart .kv { font-size: clamp(0.9rem, 0.98vw, 1.02rem); }
+
+/* ---------- Las gráficas deben verse completas dentro de la diapositiva ---------- */
+.scene--chart { min-height: 100svh; padding-bottom: clamp(2rem, 6vh, 4rem); }
+.scene--chart > .bi { display: flex; flex-direction: column; align-items: center; justify-self: center; }
+.scene--chart .bi img { width: auto; max-width: 100%; height: auto; max-height: calc(100svh - clamp(6rem, 18vh, 10.5rem) - 3.2rem); object-fit: contain; }
+.scene--chart .bi figcaption { align-self: stretch; }
+.gallery .bi img { max-height: 38svh; width: 100%; object-fit: contain; }
+@media (max-width: 900px) { .scene--chart .bi img { max-height: none; width: 100%; } }
