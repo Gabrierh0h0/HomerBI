@@ -1,0 +1,11 @@
+# Material fuente y archivos de trabajo (no se despliegan)
+Homer assets/
+*.docx
+*.pbix
+*.pbix.zip
+PLAN_PRESENTACION.md
+.impeccable/
+.vercel/
+node_modules/
+.DS_Store
+Thumbs.db
