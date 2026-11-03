@@ -107,8 +107,8 @@ main { position: relative; z-index: 1; }
 }
 
 /* ---------- Segmentos (Why / What / How / Conclusiones) ---------- */
-.seg { font-family: var(--font-logo); font-weight: 400; margin: 0.1em 0; line-height: 1.04; font-size: clamp(2.8rem, 7.5vw, 8rem); color: var(--yellow); text-shadow: 4px 4px 0 var(--outline); }
-.seg__tag { display: block; font-family: var(--font-bold); font-size: 0.42em; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sky); text-shadow: 3px 3px 0 var(--outline); margin-bottom: 0.15em; }
+.seg { font-family: var(--font-logo); font-weight: 400; margin: 0.1em 0; line-height: 1.12; font-size: clamp(2.8rem, 7.5vw, 8rem); color: var(--yellow); text-shadow: 4px 4px 0 var(--outline); }
+.seg__tag { display: block; font-family: var(--font-bold); font-size: max(0.42em, 14px); letter-spacing: 0.1em; text-transform: uppercase; color: var(--sky); text-shadow: 3px 3px 0 var(--outline); margin-bottom: 0.15em; }
 .scene--seg { min-height: 100svh; }
 .scene--seg .lede { max-width: 30ch; }
 
